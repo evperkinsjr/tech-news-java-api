@@ -2,8 +2,10 @@ package com.technews.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.TemporalType;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -19,7 +21,15 @@ public class Post {
     @Transient
     private int voteCount;
     private Integer userId;
+
+    @NotNull
+    @Temporal(TemporalType.DATE)
+    @Column(name = "posted_at")
     private Date postedAt = new Date();
+
+    @NotNull
+    @Temporal(TemporalType.DATE)
+    @Column(name = "updated_at")
     private Date updatedAt = new Date();
     private List<Comment> comments;
 
