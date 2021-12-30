@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 public class UserController {
+
     @Autowired
     UserRepository repository;
 
@@ -66,4 +67,5 @@ public class UserController {
     public void deleteUser(@PathVariable int id) {
         repository.deleteById(id);
     }
+
 }
