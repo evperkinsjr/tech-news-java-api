@@ -9,7 +9,7 @@ The application was deployed using Heroku.
 - [Project Repository](https://github.com/evperkinsjr/tech-news-java-api)
 
 
-
+![java-api-tech-news-screenshot](https://user-images.githubusercontent.com/79537431/147797117-fc8704d8-fba8-4fe5-8d92-7e648bc454c3.png)
 
 
 ## Technologies Used
